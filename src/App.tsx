@@ -1,10 +1,16 @@
-import './App.css'
-import NavBar from './components/NavBar'
+import './styles/App.css'
+import Navbar from './components/Navbar.tsx'
+import Sidebar from "./components/Sidebar.tsx";
 
 function App() {
   return (
     <>
-        <NavBar/>
+        <div className="app">
+            <Navbar/>
+            <div className="app-body">
+                <Sidebar/>
+            </div>
+        </div>
     </>
   )
 }

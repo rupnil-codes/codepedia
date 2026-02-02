@@ -1,24 +1,24 @@
-import "./NavBar.css"
-import logo_text from "../assets/codepedia_logotext.svg"
-import toggle_light_mode from "../assets/icons/sun-medium.svg"
+import "../styles/NavBar.css"
 
-function NavBar() {
+function Navbar() {
     return (
-        <div className={"nav-bar"}>
-            <img src={logo_text} className={"logo_text"} alt={"codepedia"}></img>
-            {/*<span className={"logo-text"}>CODEPEDIA</span>*/}
-            <input
-                type="text"
-                className={"nav-search"}
-                placeholder={"Search anything"}
-            />
-            <img src={toggle_light_mode} className={"toggle_light_mode"} alt={"Toggle Light Mode"}></img>
-            <span className={"nav-buttons"}>HOME</span>
-            <span className={"nav-buttons"}>FRONTEND</span>
-            <span className={"nav-buttons"}>BACKEND</span>
-            <span className={"nav-buttons"}>ABOUT</span>
-        </div>
+        <nav className="nav-bar">
+            <ul className="nav">
+                <a href="/" className="logo-banner"></a>
+                <div className="nav-content">
+                    <li><a href={"/"}>Themes</a></li>
+                    <li><a href={"/"}>Languages</a></li>
+                    <li><a href={"/"}>About</a></li>
+                    <li><a href={"/"}>T&C</a></li>
+                    <input
+                        type={"text"}
+                        placeholder={"Search anything"}
+                        className="nav-search"
+                    />
+                </div>
+            </ul>
+        </nav>
     )
 }
 
-export default NavBar
+export default Navbar
