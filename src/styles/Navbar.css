@@ -6,9 +6,13 @@
 nav {
     position: fixed;
     z-index: 9999;
+    background-color: var(--base);
 
     display: flex;
     align-items: center;
+
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 
     height: 3.5rem;
     width: 100%;
@@ -29,6 +33,7 @@ nav .nav {
 }
 
 nav .logo-banner {
+    flex-shrink: 0;
     height: 100%;
     width: 10rem;
 
@@ -63,7 +68,8 @@ nav ul .nav-search {
 
     background-image: url("../assets/icons/search.svg");
     background-repeat: no-repeat;
-    background-position: 0.5rem 0.24rem;
+    background-position: 0.4rem center;
+    background-size: 1.5rem;
     border-radius: var(--border-radius);
 
     /*background-color: var(--overlay-2);*/
@@ -73,7 +79,7 @@ nav ul input::placeholder {
     color: var(--surface-1);
 }
 
-nav ul li a{
+nav ul li .link{
     padding: 0.55rem 1.75rem 0.55rem 1.75rem;
     border-radius: 1rem;
     text-decoration: none;
@@ -81,7 +87,7 @@ nav ul li a{
     font-size: 1.05rem;
     color: var(--subtext-1)
 }
-nav ul li a:hover{
+nav ul li .link:hover{
     color: var(--bright-text);
     background-color: var(--mantle);
 }
