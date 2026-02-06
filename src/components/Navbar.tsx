@@ -16,6 +16,12 @@ function Navbar() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >Community</a></li>
+                        <li><a href="https://hackclub.com/">
+                            <img
+                            className="hackclub"
+                            src="https://assets.hackclub.com/flag-orpheus-left.svg"
+                            alt="Hack Club"/>
+                        </a></li>
                         <input
                             type={"text"}
                             placeholder={"Search anything"}
