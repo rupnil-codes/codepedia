@@ -5,7 +5,7 @@ h1 {
 }
 
 .home {
-    margin: 6rem 1.25rem 1.25rem;
+    margin: 8rem 1.25rem 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,4 +30,89 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.highlight {
+    color: var(--lavender);
+}
+.hero .subtitle {
+    font-size: 1.25rem;
+    max-width: 600px;
+    color: var(--subtext-1);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background-color: var(--surface-0);
+    color: var(--text);
+    padding: 1rem 2.5rem;
+    border-radius: 0.75rem;
+
+    margin: 1rem;
+
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+.cta-button:hover {
+    background-color: var(--surface-1);
+    transform: translateY(-2px);
+}
+
+.features {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    gap: 1rem;
+}
+
+.feature-card {
+    width: 100%;
+
+    background-color: var(--surface-0);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--surface-1);
+    transition: border-color 0.3s;
+}
+
+.feature-card:hover {
+    border-color: var(--lavender);
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.feature-card p {
+    color: var(--subtext-1);
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        padding: 4rem 1rem;
+    }
 }
