@@ -158,7 +158,7 @@ export const LANGUAGES_DATA: Language[] = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elixir/elixir-original.svg",
         description: "A dynamic, functional language designed for building scalable and maintainable applications.",
         docsLink: "https://elixir-lang.org/docs.html",
-        tutorialLink: "https://elixir-school.com/en/"
+        tutorialLink: "https://exercism.org/tracks/elixir"
     },
     {
         id: 20,

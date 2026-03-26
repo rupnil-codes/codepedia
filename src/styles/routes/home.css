@@ -4,6 +4,10 @@ h1 {
     color: var(--text);
 }
 
+p a {
+    color: var(--lavender);
+}
+
 .home {
     margin: 8rem 1.25rem 1.25rem;
     display: flex;
