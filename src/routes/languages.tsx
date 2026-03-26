@@ -1,50 +1,38 @@
 import "../styles/routes/languages.css"
+import { LANGUAGES_DATA } from "../data/data.ts";
 
 function Languages() {
+    const sortedLanguages = [...LANGUAGES_DATA].sort((a, b) =>
+        a.name.localeCompare(b.name)
+    );
+
     return (
         <div className="languages">
             <h1>LANGUAGES</h1>
             <p>Find a range of programming languages to learn.</p>
 
             <div className={"cards"}>
-                <div className={"card"}>
-                    <div className={"card-cont"}>
-                        <div className={"header"}>
-                            <img src={"https://docs.python.org/3/_static/py.svg"} alt={"python"}/>
-                            <h2>Python</h2>
-                        </div>
-                        <p className={"desc"}>a small description about the language lol. Idk what to write here but i need to write something to make more text.</p>
-                        <div className={"buttons"}>
-                            <a href={"#"}>
-                                <div className={"button"}>Docs </div>
-                            </a>
-                            <a href={"#"}>
-                                <div className={"button"}>Tutorial</div>
-                            </a>
+                {sortedLanguages.map((lang) => (
+                    <div className="card" key={lang.id}>
+                        <div className="card-cont">
+                            <div className="header">
+                                <img src={lang.icon} alt={lang.name} />
+                                <h2>{lang.name}</h2>
+                            </div>
+
+                            <p className="desc">{lang.description}</p>
+
+                            <div className="buttons">
+                                <a href={lang.docsLink} target="_blank" rel="noreferrer">
+                                    <div className="button">Docs</div>
+                                </a>
+                                <a href={lang.tutorialLink} target="_blank" rel="noreferrer">
+                                    <div className="button">Tutorial</div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className={"card"}>
-
-                </div>
-                <div className={"card"}>
-
-                </div>
-                <div className={"card"}>
-
-                </div>
-                <div className={"card"}>
-
-                </div>
-                <div className={"card"}>
-
-                </div>
-                <div className={"card"}>
-
-                </div>
-                <div className={"card"}>
-
-                </div>
+                ))}
             </div>
         </div>
     )
