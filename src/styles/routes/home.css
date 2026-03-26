@@ -12,28 +12,21 @@ h1 {
 }
 
 .themes {
-    margin: 6rem 1.25rem 1.25rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.languages {
-    margin: 6rem 1.25rem 1.25rem;
+    margin: 8rem 1.25rem 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .about {
-    margin: 6rem 1.25rem 1.25rem;
+    margin: 8rem 1.25rem 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .terms {
-    margin: 6rem 1.25rem 1.25rem;
+    margin: 8rem 1.25rem 1.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
